@@ -38,7 +38,7 @@ def train_linear_regression_model(X_train: np.ndarray, y_train: np.ndarray, X_te
     X_test = scalar.transform(X_test)
 
     # Initialize linear regression model
-    linear_regression_model = linear_model
+    linear_regression_model = linear_model.LinearRegression()
 
     # fit model
     linear_regression_model.fit(X_train, y_train)
